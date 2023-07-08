@@ -1,6 +1,9 @@
 <template>
   <div id="app">
     <div id="nav">
+      <div class="logo">
+        <img src="./assets/logo.png" alt="Logo" />
+      </div>
       <router-link :to="{ name: 'main' }">Main</router-link>|
       <router-link :to="{ name: 'search' }">Search</router-link>|
       <router-link :to="{ name: 'about' }">About</router-link>|
@@ -47,7 +50,17 @@ export default {
 }
 
 #nav {
+  display: flex;
+  align-items: center;
   padding: 30px;
+}
+
+.logo {
+  margin-right: 20px;
+}
+
+.logo img {
+  height: 60px; /* Adjust the height as needed */
 }
 
 #nav a {
@@ -58,4 +71,5 @@ export default {
 #nav a.router-link-exact-active {
   color: #42b983;
 }
+
 </style>
