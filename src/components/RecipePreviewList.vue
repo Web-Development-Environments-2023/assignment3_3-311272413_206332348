@@ -43,8 +43,8 @@ export default {
 
         // console.log(response);
         const recipes = response.data.recipes;
-        this.recipes = [];
-        this.recipes.push(...recipes);
+        this.recipes = recipes;
+        // this.recipes.push(...recipes);
         // console.log(this.recipes);
       } catch (error) {
         console.log(error);

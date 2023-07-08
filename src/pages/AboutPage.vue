@@ -6,11 +6,11 @@
   
   <script>
   export default {
-    // Component options
+    
   }
   </script>
   
   <style>
-  /* Component styles */
+  
   </style>
   
