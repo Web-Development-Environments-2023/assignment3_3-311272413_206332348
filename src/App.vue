@@ -1,11 +1,13 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link :to="{ name: 'main' }">Vue Recipes</router-link>|
+      <router-link :to="{ name: 'main' }">Main</router-link>|
       <router-link :to="{ name: 'search' }">Search</router-link>|
+      <router-link :to="{ name: 'about' }">About</router-link>|
+
       {{ !$root.store.username }}
       <span v-if="!$root.store.username">
-        Guest:
+        Hello Guest:
         <router-link :to="{ name: 'register' }">Register</router-link>|
         <router-link :to="{ name: 'login' }">Login</router-link>|
       </span>
