@@ -3,7 +3,7 @@
 
 # Monica's Recipe Site
 
-![Monica's Recipe Site](https://media.tenor.com/F1n0r71gykgAAAAS/monica-monica-ghellar.gif)
+<img src="https://media.tenor.com/F1n0r71gykgAAAAS/monica-monica-ghellar.gif" width="400" alt="Monica's Recipe Site">
 
 Monica's Recipe Site is a web application that provides a delightful cooking experience, inspired by the iconic character Monica Geller from the TV series Friends. The site allows users to search for various recipes, view recipe details, and manage their favorite recipes. It interfaces with the Spoonacular API to fetch real recipes and related information.
 
