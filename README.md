@@ -35,7 +35,7 @@ The project incorporates a variety of technologies to deliver a seamless user ex
 
 To set up and run the Monica's Recipe Site locally, follow these steps:
 
-1. Clone the repository from [https://github.com/Web-Development-Environments-2023/assignment3_3-311272413_206332348/tree/master].
+1. Clone the repository from [GitHub Repository URL](https://github.com/Web-Development-Environments-2023/assignment3_3-311272413_206332348/tree/master).
 2. Navigate to the project directory and install the required dependencies using `npm install`.
 3. Configure the database connection settings in the `.env` file.
 4. Run the server using `npm start`.
