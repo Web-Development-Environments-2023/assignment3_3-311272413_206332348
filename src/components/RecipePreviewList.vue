@@ -1,15 +1,15 @@
 <template>
-  <b-container>
-    <h3>
-      {{ title }}:
-      <slot></slot>
-    </h3>
-    <b-row>
-      <b-col v-for="r in recipes" :key="r.id">
-        <RecipePreview class="recipePreview" :recipe="r" />
-      </b-col>
-    </b-row>
-  </b-container>
+  <div>
+    <b-container class="title">
+      <h3>
+        {{ title }}
+        <slot></slot>
+      </h3>
+    </b-container>
+    <b-container v-for="r in recipes" :key="r.id">
+      <RecipePreview class="recipePreview" :recipe="r" />
+    </b-container>
+  </div>
 </template>
 
 <script>
@@ -17,45 +17,32 @@ import RecipePreview from "./RecipePreview.vue";
 export default {
   name: "RecipePreviewList",
   components: {
-    RecipePreview
+    RecipePreview,
   },
   props: {
     title: {
       type: String,
-      required: true
-    }
+      required: true,
+    },
+    recipes: {
+      type: Array,
+      required: true,
+    },
+    colLen: {
+      type: Number,
+      required: true,
+    },
   },
-  data() {
-    return {
-      recipes: []
-    };
-  },
-  mounted() {
-    this.updateRecipes();
-  },
-  methods: {
-    async updateRecipes() {
-      try {
-        const response = await this.axios.get(
-          this.$root.store.server_domain + "/recipes/random",
-          // "https://test-for-3-2.herokuapp.com/recipes/random"
-        );
-
-        // console.log(response);
-        const recipes = response.data.recipes;
-        this.recipes = recipes;
-        // this.recipes.push(...recipes);
-        // console.log(this.recipes);
-      } catch (error) {
-        console.log(error);
-      }
-    }
-  }
 };
 </script>
 
 <style lang="scss" scoped>
-.container {
-  min-height: 400px;
+.title {
+  text-align: center;
+}
+.recipePreview {
+  padding-bottom: 5px;
+  padding-left: 0;
+  padding-right: 0;
 }
 </style>
