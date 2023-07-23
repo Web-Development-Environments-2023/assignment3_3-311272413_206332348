@@ -9,7 +9,6 @@ Monica's Recipe Site is a web application that provides a delightful cooking exp
 
 ## Table of Contents
 
-- [Monica's Recipe Site](#monicas-recipe-site)
   - [Table of Contents](#table-of-contents)
   - [Introduction](#introduction)
   - [Technologies](#technologies)
