@@ -80,7 +80,7 @@
 }
 
 .card-link a {
-  color: #42b983;
+  color: #1100cd;
   text-decoration: none;
 }
 
